@@ -9,7 +9,8 @@ task_wait_random = __import__("3-tasks").task_wait_random
 
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
-    """Create n tasks, execute them concurrently, and return their delays in ascending order."""
+    """Create n tasks, execute them concurrently,
+    and return their delays in ascending order."""
     tasks = []
     # Create a list of n tasks
     for _ in range(n):
